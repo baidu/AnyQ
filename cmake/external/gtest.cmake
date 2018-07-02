@@ -1,0 +1,27 @@
+INCLUDE(ExternalProject)
+
+SET(GTEST_SOURCES_DIR ${THIRD_PARTY_PATH}/gtest)
+SET(GTEST_INSTALL_DIR ${THIRD_PARTY_PATH}/)
+
+ExternalProject_Add(
+    extern_gtest
+    ${EXTERNAL_PROJECT_LOG_ARGS}
+    DEPENDS         ${GTEST_DEPENDS}
+    GIT_REPOSITORY  "https://github.com/google/googletest.git"
+    GIT_TAG         "release-1.8.0"
+    PREFIX          ${GTEST_SOURCES_DIR}
+    UPDATE_COMMAND  ""
+    CMAKE_ARGS      -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
+                    -DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
+                    -DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}
+                    -DCMAKE_C_FLAGS=${CMAKE_C_FLAGS}
+                    -DCMAKE_INSTALL_PREFIX=${GTEST_INSTALL_DIR}
+                    -DCMAKE_POSITION_INDEPENDENT_CODE=ON
+                    -DBUILD_GMOCK=ON
+                    -DCMAKE_BUILD_TYPE=${THIRD_PARTY_BUILD_TYPE}
+                     ${EXTERNAL_OPTIONAL_ARGS}
+    CMAKE_CACHE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${GTEST_INSTALL_DIR}
+                     -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON
+                     -DCMAKE_BUILD_TYPE:STRING=${THIRD_PARTY_BUILD_TYPE}
+)
+

@@ -1,0 +1,138 @@
+package anyq;
+
+message DictConfig {
+    required string name = 1;
+    required string type = 2;
+    required string path = 3;
+    optional string blob_name = 4;
+    optional bool is_reload_able = 5;
+}
+message DictManagerConfig {
+    required string name = 1;
+    repeated DictConfig dict_config = 2;
+}
+
+message AnalysisMethodConfig {
+    required string name = 1;
+    required string type = 2;
+    required string using_dict_name = 3;
+    optional bool need_phrase_seg = 4;
+    //paddle semantic emb
+    optional string query_feed_name = 5;
+    optional string cand_feed_name = 6;
+    optional string embedding_fetch_name = 7;
+    optional uint32 dim = 8;
+}
+message AnalysisConfig {
+    optional string name = 1;
+    optional string hide_tag = 2;
+    repeated AnalysisMethodConfig analysis_method = 3;
+}
+
+message SolrQConfig {
+    required string type = 1;
+    required string name = 2;
+    required string solr_field = 3;
+    required string source_name = 4;
+    optional string weight_dict = 5;
+    optional string compare_type = 6;
+}
+message RetrievalPluginConfig {
+    // common
+    required string type = 1;
+    required string name = 2;
+    required uint32 num_result = 3;
+    // solr
+    optional string search_host = 4;
+    optional uint32 search_port = 5;
+    optional string engine_name = 6;
+    optional string solr_result_fl = 7;
+    repeated SolrQConfig solr_q = 8;
+    // annoy
+    optional uint32 vector_size = 9;
+    optional uint32 search_k = 10;
+    optional string index_path = 11;
+    optional string using_dict_name = 12;
+    // addtional(ES)
+    optional string type_name = 14;
+}
+message RetrievalConfig {
+    repeated RetrievalPluginConfig retrieval_plugin = 1;
+}
+
+message SelectConfig {
+    optional int32 select_index = 1;
+}
+
+message RankPredict {
+    required string type = 1;
+    optional string using_dict_name = 2;
+    optional string booster_model_path = 3;
+    optional SelectConfig select_config = 101;
+}
+message PatternConfig {
+    required string pat_fname = 1;
+    required string dict_fname = 2;
+    required string igno_fname = 3;
+}
+message TFSimConfig {
+    optional int32 pad_id = 1;
+    optional int32 sen_len = 2;
+    optional string left_input_name = 3;
+    optional string right_input_name = 4;
+    optional string output_name = 5;
+}
+message MatchingConfig {
+    required string name = 1;
+    required string type = 2;
+    optional string using_dict_name = 3;
+    required int32 output_num = 4;
+    required bool rough = 5;
+    optional PatternConfig pattern = 6;
+    // this is for tf
+    optional TFSimConfig tfconf = 10;
+    // this is for paddle
+    optional string query_feed_name = 11;
+    optional string cand_feed_name = 12;
+    optional string score_fetch_name = 13;
+}
+message RankConfig {
+    optional string name = 1;
+    optional int32 rough_top_result = 2;
+    optional int32 top_result = 3;
+    repeated MatchingConfig matching_config = 4;
+    optional RankPredict rough_rank_predictor = 5;
+    optional RankPredict rank_predictor = 6;
+    optional float rough_threshold = 7;
+    optional float threshold = 8;
+    optional bool deep_rank_with_answer = 9;
+    optional int32 max_ans_num_per_query = 10;
+}
+message AnyqStrategyConfig {
+    optional string analysis_config = 1;
+    optional string retrieval_config = 2;
+    optional string rank_config = 3;
+}
+
+message ReqPreprocPluginConfig {
+    required string type = 1;
+    required string name = 2;
+}
+
+message ReqPostprocPluginConfig {
+    required string type = 1;
+    required string name = 2;
+}
+
+message ServerConfig {
+    required int32 idle_timeout_sec = 1;
+    required int32 max_concurrency = 2;
+    required int32 port = 3;
+    required string server_conf_dir = 4;
+    required string log_conf_file = 5;
+    required string anyq_dict_conf_dir = 6;
+    required string anyq_conf_dir= 7;
+    required ReqPreprocPluginConfig preproc_plugin = 8;
+    required ReqPostprocPluginConfig postproc_plugin = 9;
+    optional string solr_clear_passwd = 10;
+}

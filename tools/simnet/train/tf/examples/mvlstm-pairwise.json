@@ -1,0 +1,50 @@
+{
+    "train_data":{
+        "train_file": "data/convert_train_pair_data",
+        "data_size": 62,
+        "left_slots" : [["left",32]],
+        "right_slots" : [["right",32]]
+    },
+
+    "model":{
+        "net_py": "./nets/mvlstm",
+        "net_class": "MVLSTM",
+        "vocabulary_size": 3,
+        "embedding_dim": 128,
+        "hidden_size": 128,
+        "k_max_num": 32,
+        "match_mask" : 1,
+        "loss_py": "./losses/simnet_loss",
+        "loss_class": "PairwiseLogLoss",
+        "margin": 0.1
+    },
+
+    "global":{
+        "training_mode": "pairwise",
+        "n_class": 2,
+        "max_len_left": 32,
+        "max_len_right": 32
+    },
+
+    "setting":{
+        "batch_size": 64,
+        "num_epochs": 1,
+        "thread_num": 6,
+        "print_iter": 100,
+        "model_path": "model/pairwise",
+        "model_prefix": "mvlstm",
+        "learning_rate": 0.001,
+        "shuffle": 1
+    },
+
+    "test_data":{
+        "test_file": "data/convert_test_pair_data",
+        "test_model_file":  "model/pairwise/mvlstm.epoch1",
+        "test_result": "result_mvlstm_pairwise"
+    },
+
+    "graph":{
+        "graph_path": "graph",
+        "graph_name": "model_mvlstm_pairwise.protxt"
+    }
+}

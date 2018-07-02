@@ -1,0 +1,17 @@
+package anyq;
+
+option cc_generic_services = true;
+
+message HttpRequest {
+};
+
+message HttpResponse {
+};
+
+service HttpService {
+        rpc anyq(HttpRequest) returns (HttpResponse);
+        rpc solr_insert(HttpRequest) returns (HttpResponse);
+        rpc solr_update(HttpRequest) returns (HttpResponse);
+        rpc solr_delete(HttpRequest) returns (HttpResponse);
+        rpc solr_clear(HttpRequest) returns (HttpResponse);
+};

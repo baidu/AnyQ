@@ -1,0 +1,49 @@
+{
+    "train_data": {
+        "train_file": "data/convert_train_pair_data",
+        "data_size": 62,
+        "left_slots": [["left", 32]],
+        "right_slots": [["right", 32]]
+    },
+    
+    "model": {
+        "net_py": "./nets/knrm",
+        "net_class": "KNRM",
+        "vocabulary_size": 3,
+        "embedding_dim": 128,
+        "kernel_num": 3,
+        "lamb": 0.5,
+        "loss_py": "./losses/simnet_loss",
+        "loss_class": "PairwiseLogLoss",
+        "margin": 0.1
+    },
+
+    "global": {
+        "training_mode": "pairwise",
+        "n_class": 2,
+        "max_len_left": 32,
+        "max_len_right": 32
+    },
+
+    "setting": {
+        "batch_size": 64,
+        "num_epochs": 1,
+        "thread_num": 6,
+        "print_iter": 100,
+        "model_path": "model/pairwise",
+        "model_prefix": "knrm",
+        "learning_rate": 0.001,
+        "shuffle": 1
+    },
+
+    "test_data": {
+        "test_file": "data/convert_test_pair_data",
+        "test_model_file": "model/pairwise/knrm.epoch1",
+        "test_result": "result_knrm_pairwise"
+    },
+
+    "graph": {
+        "graph_path": "graph",
+        "graph_name": "model_knrm_pairwise.protxt"
+    }
+}

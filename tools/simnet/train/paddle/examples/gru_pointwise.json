@@ -1,0 +1,27 @@
+{
+    "net": {
+        "module_name": "cnn",
+        "class_name": "CNN",
+        "emb_dim": 128, 
+        "gru_dim": 128,
+        "hidden_dim": 128
+    },
+    "loss": {
+        "module_name": "softmax_cross_entropy_loss",
+        "class_name": "SoftmaxCrossEntropyLoss"
+    },
+    "optimizer": {
+        "class_name": "SGDOptimizer",
+        "learning_rate" : 0.001
+    },
+    "dict_size": 3,
+    "task_mode": "pointwise",
+    "train_file_path": "data/train_pointwise_data", 
+    "test_file_path": "data/test_pointwise_data", 
+    "result_file_path": "result_gru_pointwise",
+    "epoch_num": 1, 
+    "model_path": "models/gru_pointwise",
+    "use_epoch": 0,
+    "batch_size": 64,
+    "num_threads": 4
+}
