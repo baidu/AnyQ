@@ -8,7 +8,7 @@ ExternalProject_Add(
     ${EXTERNAL_PROJECT_LOG_ARGS}
     DEPENDS                 extern_paddle
     DOWNLOAD_DIR            ${LAC_DOWNLOAD_DIR}
-    DOWNLOAD_COMMAND        git clone https://github.com/baidu/lac.git
+    DOWNLOAD_COMMAND        git clone https://github.com/baidu/lac.git && cd lac && git checkout v1.0.0
     DOWNLOAD_NO_PROGRESS    1
     PREFIX                  ${LAC_SOURCES_DIR}
     BUILD_COMMAND           cd ${LAC_DOWNLOAD_DIR}/lac && cmake -DPADDLE_ROOT=${THIRD_PARTY_PATH}/install/paddle/fluid_install_dir/ ./
