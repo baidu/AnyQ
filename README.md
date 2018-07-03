@@ -77,7 +77,8 @@ docker pull paddlepaddle/paddle:lastest-dev
 # 获取anyq定制solr，anyq示例配置
 cp ../tools/anyq_deps.sh .
 sh anyq_deps.sh
-# 启动solr
+
+# 启动solr, 依赖python-json, jdk>=1.8
 cp ../tools/solr -rp solr_script
 sh solr_script/anyq_solr.sh solr_script/sample_docs
 
