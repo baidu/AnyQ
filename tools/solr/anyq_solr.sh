@@ -33,6 +33,10 @@ SOLR_EMP_CONF=$SOLR_HOME/example/solr_config_set/common
 SOLR_CONF=$SOLR_HOME/example/solr/collection1/conf
 cp $SOLR_EMP_CONF/* $SOLR_CONF/
 
+#set paddle environment variable
+export MKL_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+
 #start
 sh ${SOLR_SERVER} start ${SOLR_HOME} ${SOLR_PORT}
 
