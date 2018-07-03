@@ -1,6 +1,6 @@
 # AnyQ
 
-**AnyQ** 开源项目主要包含面向FAQ集合的问答系统框架、文本语义匹配工具SimNet。
+**AnyQ(ANswer Your Questions)** 开源项目主要包含面向FAQ集合的问答系统框架、文本语义匹配工具SimNet。</br>
 <br>问答系统框架采用了配置化、插件化的设计，各功能均通过插件形式加入，当前共开放了20+种插件。开发者可以使用AnyQ系统快速构建和定制适用于特定业务场景的FAQ问答系统，并加速迭代和升级。</br>
 <br>SimNet是百度自然语言处理部于2013年自主研发的语义匹配框架，该框架在百度各产品上广泛应用，主要包括BOW、CNN、RNN、MM-DNN等核心网络结构形式，同时基于该框架也集成了学术界主流的语义匹配模型，如MatchPyramid、MV-LSTM、K-NRM等模型。SimNet使用PaddleFluid和Tensorflow实现，可方便实现模型扩展。使用SimNet构建出的模型可以便捷的加入AnyQ系统中，增强AnyQ系统的语义匹配能力</br> ([**English**][10])
 
@@ -19,15 +19,15 @@ AnyQ的框架结构如下图：
 AnyQ系统集成了检索和匹配的众多插件，通过配置的方式生效；以检索方式和文本匹配相似度计算中的插件为例：
 
 * 检索方式(Retrieval)
- * 倒排索引：基于开源倒排索引Solr，加入百度开源分词；
- * 语义检索：基于SimNet语义表示，使用ANNOY进行ANN 检索；
- * 人工干预：通过提供精准答案，控制输出；
+    * 倒排索引：基于开源倒排索引Solr，加入百度开源分词；
+    * 语义检索：基于SimNet语义表示，使用ANNOY进行ANN 检索；
+    * 人工干预：通过提供精准答案，控制输出；
 * 匹配计算(Matching)
- *  字面匹配相似度：在对中文问题进行切词等处理之后，计算字面匹配特征
+    *  字面匹配相似度：在对中文问题进行切词等处理之后，计算字面匹配特征
         * Cosine相似度
         * Jaccard相似度
         * BM25
- *  语义匹配相似度
+    *  语义匹配相似度
         * SimNet语义匹配：使用语义匹配SimNet架构训练的模型，构建问题在语义层面的相似度；
 
 #### 插件化
@@ -58,9 +58,16 @@ SimNet使用PaddleFluid和Tensorflow实现，更多文档请参考：
 
 ## 代码编译
 
+### Linux
 cmake 3.2.2以上，g++ >=4.8.2，
 ```
 mkdir build && cd build && cmake .. && make
+```
+### Others
+针对MacOS、Windows等环境，推荐使用docker方式
+```
+# 使用paddle官方镜像
+docker pull paddlepaddle/paddle:lastest-dev
 ```
 
 ## Demo
@@ -95,9 +102,9 @@ sh solr_script/anyq_solr.sh solr_script/sample_docs
 * [AnyQ使用语义索引](https://github.com/baidu/AnyQ/blob/master/docs/semantic_retrieval_tutorial.md)
 
 ## 如何贡献
-* 可以将定制的插件贡献到AnyQ
+* 可以在AnyQ框架下定制特定功能的插件，教程参考[AnyQ如何添加插件](https://github.com/baidu/AnyQ/blob/master/docs/plugin_tutorial.md)
+* 如果觉得自己定制的插件功能足够通用&漂亮，欢迎给我们提交PR
 
-## 问题咨询
 
 
 ## Copyright and License

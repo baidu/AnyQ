@@ -88,7 +88,7 @@ def train(conf_dict):
     # Get and run executor
     parallel_executor = fluid.ParallelExecutor(
         use_cuda=False, loss_name=avg_cost.name,
-        main_program=fluid.default_main_program(), num_threads=conf_dict["num_threads"])
+        main_program=fluid.default_main_program())
     # Get device number
     device_count = parallel_executor.device_count
     logging.info("device count: %d" % device_count)
@@ -97,7 +97,7 @@ def train(conf_dict):
     for epoch_id in range(conf_dict["epoch_num"]):
         losses = []
         # Get batch data iterator
-        batch_data = paddle.batch(reader, conf_dict["batch_size"])
+        batch_data = paddle.batch(reader, conf_dict["batch_size"], drop_last=False)
         start_time = time.time()
         for iter, data in enumerate(batch_data()):
             if len(data) < device_count:
@@ -105,7 +105,7 @@ def train(conf_dict):
             avg_loss = parallel_executor.run(
                 [avg_cost.name], feed=feeder.feed(data))
             print("epoch: %d, iter: %d, loss: %f" %
-                  (epoch_id, iter, np.mean(avg_loss[0])))
+                (epoch_id, iter, np.mean(avg_loss[0])))
             losses.append(np.mean(avg_loss[0]))
         end_time = time.time()
         print("epoch: %d, loss: %f, used time: %d sec" %
