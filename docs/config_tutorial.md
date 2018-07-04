@@ -47,7 +47,7 @@ analysis_method {
 
 ## Retrieval配置
 在retrieval.conf中可以增添检索策略插件。当前系统的retrieval插件主要包括以下几种:   
-Term检索：TermRetrievalPlugin   
+* Term检索：TermRetrievalPlugin   
 * 语义检索：SemanticRetrievalPlugin   
 * 人工干预：ManualRetrievalPlugin   
 
@@ -73,7 +73,7 @@ retrieval_plugin {
 
 - **Solr查询插件**
 
-其中"solr_q"是solr查询的插件，当前可配置的solr查询插件包括:   
+    其中"solr_q"是solr查询的插件，当前可配置的solr查询插件包括:   
     * EqualSolrQBuilder：字段等于   
     * BoostSolrQBuilder：字段term加权   
     * ContainSolrQBuilder：字段包含关键词   
