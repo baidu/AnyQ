@@ -66,7 +66,7 @@
 
 1. BM25Similarity是Matching插件，需继承MatchingInterface接口，并重写相关的虚函数.
 
-include/matching/lexical/bm25_sim.h
+    include/matching/lexical/bm25_sim.h
 ```
 ...
 
@@ -85,7 +85,7 @@ public:
 
 2. 注册BM25Similarity插件.
 
-include/common/plugin_header.h
+    include/common/plugin_header.h
 ```
 ...
 
@@ -101,7 +101,7 @@ REGISTER_PLUGIN(BM25Similarity);
 
 实现构造、析构、init、destroy、compute_similarity等函数。
 
-src/matching/lexical/bm25_sim.cpp
+    src/matching/lexical/bm25_sim.cpp
 ```
 ...
 
