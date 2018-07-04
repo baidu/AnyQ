@@ -65,11 +65,11 @@
 ### 头文件定义
 
 1. BM25Similarity是Matching插件，需继承MatchingInterface接口，并重写相关的虚函数.
-
+	
 	include/matching/lexical/bm25_sim.h
 	```
 	...
-
+	
 	class BM25Similarity : public MatchingInterface {
 	public:
 		BM25Similarity();
@@ -79,7 +79,7 @@
 		virtual int compute_similarity(const AnalysisResult& analysis_res,
 			 RankResult& candidates) override;
 	...
-
+	
 	};
 	```
 
@@ -88,48 +88,48 @@
 	include/common/plugin_header.h
 	```
 	...
-
+	
 	#include "matching/lexical/bm25_sim.h"
 	...
-
+	
 	REGISTER_PLUGIN(BM25Similarity);
 	...
-
+	
 	```
 
 ### 功能实现
 
 实现构造、析构、init、destroy、compute_similarity等函数。
-
-src/matching/lexical/bm25_sim.cpp
-```
-...
-
-BM25Similarity::BM25Similarity(){
-...
-
-}
-...
-
-BM25Similarity::~BM25Similarity(){
-...
-
-}
-...
-
-int BM25Similarity::init(DualDictWrapper* dict, const MatchingConfig& matching_config) {
-...
-
-}
-...
-
-int BM25Similarity::destroy() {
-...
-
-}
-...
-
-```
+	
+	src/matching/lexical/bm25_sim.cpp
+	```
+	...
+	
+	BM25Similarity::BM25Similarity(){
+	...
+	
+	}
+	...
+	
+	BM25Similarity::~BM25Similarity(){
+	...
+	
+	}
+	...
+	
+	int BM25Similarity::init(DualDictWrapper* dict, const MatchingConfig& matching_config) {
+	...
+	
+	}
+	...
+	
+	int BM25Similarity::destroy() {
+	...
+	
+	}
+	...
+	
+	```
 
 ### 如何编译
 
