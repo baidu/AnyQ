@@ -99,7 +99,7 @@
 
 ### 功能实现
 
-实现构造、析构、init、destroy、compute_similarity等函数。
+    实现构造、析构、init、destroy、compute_similarity等函数。
 	
 	src/matching/lexical/bm25_sim.cpp
 	```
