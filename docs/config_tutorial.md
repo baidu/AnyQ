@@ -6,11 +6,11 @@
 ## load词典
 
 在策略插件中使用的词典，需在dict.conf中配置。当前系统的词典插件主要包括以下几种：   
-(1) 哈希词典：HashAdapter<TYPE1, TYPE2>   
-(2) 干预词典：String2RetrievalItemAdapter   
-(3) 切词词典: WordsegAdapter   
-(4) Paddle SimNet匹配模型词典: PaddleSimAdapter 
-(5) Tensorflow模型词典: TFModelAdapter   
+* 哈希词典：HashAdapter<TYPE1, TYPE2>   
+* 干预词典：String2RetrievalItemAdapter   
+* 切词词典: WordsegAdapter   
+* Paddle SimNet匹配模型词典: PaddleSimAdapter 
+* Tensorflow模型词典: TFModelAdapter   
 
 配置的格式, 举例如下
 
@@ -27,9 +27,9 @@ dict_config {
 ## Analysis
 
 在analysis.conf中可以增添query分析策略插件。当前系统的analysis插件主要包括以下几种:   
-(1) 切词：AnalysisWordseg   
-(2) query语义向量表示：AnalysisSimNetEmb   
-(3) query替换: AnalysisQueryIntervene   
+* 切词：AnalysisWordseg   
+* query语义向量表示：AnalysisSimNetEmb   
+* query替换: AnalysisQueryIntervene   
 
 配置的格式如下
 
@@ -47,9 +47,9 @@ analysis_method {
 
 ## Retrieval配置
 在retrieval.conf中可以增添检索策略插件。当前系统的retrieval插件主要包括以下几种:   
-(1) Term检索：TermRetrievalPlugin   
-(2) 语义检索：SemanticRetrievalPlugin   
-(3) 人工干预：ManualRetrievalPlugin   
+Term检索：TermRetrievalPlugin   
+* 语义检索：SemanticRetrievalPlugin   
+* 人工干预：ManualRetrievalPlugin   
 
 配置的格式如下
 
@@ -74,21 +74,21 @@ retrieval_plugin {
 - **Solr查询插件**
 
 其中"solr_q"是solr查询的插件，当前可配置的solr查询插件包括:   
-(1) EqualSolrQBuilder：字段等于   
-(2) BoostSolrQBuilder：字段term加权   
-(3) ContainSolrQBuilder：字段包含关键词   
-(4) SynonymSolrQBuilder：字段term同义词   
-(5) DateCompareSolrQBuilder：日期字段比较   
+    * EqualSolrQBuilder：字段等于   
+    * BoostSolrQBuilder：字段term加权   
+    * ContainSolrQBuilder：字段包含关键词   
+    * SynonymSolrQBuilder：字段term同义词   
+    * DateCompareSolrQBuilder：日期字段比较   
 
 ## Matching
 在rank.conf中可以增添匹配策略插件。当前系统的matching插件主要包括以下几种：   
-(1) 编辑距离相似度：EditDistanceSimilarity   
-(2) Cosine相似度：CosineSimilarity   
-(3) Jaccard相似度: JaccardSimilarity   
-(4) BM25相似度: BM25Similarity   
-(5) Paddle SimNet匹配模型相似度: PaddleSimilarity   
-(6) Tensorflow匹配模型相似度： TFSimilarity   
-(7) 对候选切词：WordsegProcessor   
+* 编辑距离相似度：EditDistanceSimilarity   
+* Cosine相似度：CosineSimilarity   
+* Jaccard相似度: JaccardSimilarity   
+* BM25相似度: BM25Similarity   
+* Paddle SimNet匹配模型相似度: PaddleSimilarity   
+* Tensorflow匹配模型相似度： TFSimilarity   
+* 对候选切词：WordsegProcessor   
 
 配置的格式如下
 
@@ -110,9 +110,9 @@ matching_config {
 
 ## Ranking
 在rank.conf中配置predictorc插件，用于根据多个相似度对候选计算得分。当前系统的rank插件主要包括以下几种：    
-(1) 线性预测模型： PredictLinearModel    
-(2) XGBoost预测模型： PredictXGBoostModel    
-(3) 特征选择预测模型：PredictSelectModel    
+* 线性预测模型： PredictLinearModel    
+* XGBoost预测模型： PredictXGBoostModel    
+* 特征选择预测模型：PredictSelectModel    
 
 配置的格式如下
 
