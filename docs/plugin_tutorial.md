@@ -66,42 +66,42 @@
 
 1. BM25Similarity是Matching插件，需继承MatchingInterface接口，并重写相关的虚函数.
 
-    include/matching/lexical/bm25_sim.h
-```
-...
+	include/matching/lexical/bm25_sim.h
+	```
+	...
 
-class BM25Similarity : public MatchingInterface {
-public:
-    BM25Similarity();
-    virtual ~BM25Similarity() override;
-    virtual int init(DualDictWrapper* dict, const MatchingConfig& matching_config) override;
-    virtual int destroy() override;
-    virtual int compute_similarity(const AnalysisResult& analysis_res,
-         RankResult& candidates) override;
-...
+	class BM25Similarity : public MatchingInterface {
+	public:
+		BM25Similarity();
+		virtual ~BM25Similarity() override;
+		virtual int init(DualDictWrapper* dict, const MatchingConfig& matching_config) override;
+		virtual int destroy() override;
+		virtual int compute_similarity(const AnalysisResult& analysis_res,
+			 RankResult& candidates) override;
+	...
 
-};
+	};
 ```
 
 2. 注册BM25Similarity插件.
 
-    include/common/plugin_header.h
-```
-...
+	include/common/plugin_header.h
+	```
+	...
 
-#include "matching/lexical/bm25_sim.h"
-...
+	#include "matching/lexical/bm25_sim.h"
+	...
 
-REGISTER_PLUGIN(BM25Similarity);
-...
+	REGISTER_PLUGIN(BM25Similarity);
+	...
 
-```
+	```
 
 ### 功能实现
 
 实现构造、析构、init、destroy、compute_similarity等函数。
 
-    src/matching/lexical/bm25_sim.cpp
+src/matching/lexical/bm25_sim.cpp
 ```
 ...
 
