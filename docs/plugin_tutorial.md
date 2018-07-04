@@ -64,7 +64,7 @@
 
 ### 头文件定义
 
-1. BM25Similarity是Matching插件，需继承MatchingInterface接口，并重写相关的虚函数.
+* BM25Similarity是Matching插件，需继承MatchingInterface接口，并重写相关的虚函数.
 	
 	include/matching/lexical/bm25_sim.h
 	```
@@ -83,7 +83,7 @@
 	};
 	```
 
-2. 注册BM25Similarity插件.
+* 注册BM25Similarity插件.
 
 	include/common/plugin_header.h
 	```
