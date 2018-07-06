@@ -88,6 +88,10 @@ sh solr_script/anyq_solr.sh solr_script/sample_docs
 
 ```
 ./run_server
+
+# 请求示例：
+http:${host}:${port}/anyq?question=XXX
+
 ```
 
 - **lib**
