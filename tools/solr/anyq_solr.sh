@@ -38,7 +38,7 @@ export MKL_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 
 #start
-sh ${SOLR_SERVER} start ${SOLR_HOME} ${SOLR_PORT}
+/bin/bash ${SOLR_SERVER} start ${SOLR_HOME} ${SOLR_PORT}
 
 # set schema
 python ${SOLR_API} set_schema ${ENGINE_HOST} ${ENGINE_NAME} ${SCHEMA_FILE} ${SOLR_PORT}
