@@ -57,7 +57,7 @@
 	```
 	dict_config {
 		name: "annoy_knowledge_dict"
-		type: "String2RecallItemAdapter"
+		type: "String2RetrievalItemAdapter"
 		path: "./faq_json.index"
 	}
 	```
