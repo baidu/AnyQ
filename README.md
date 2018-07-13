@@ -12,23 +12,23 @@ AnyQ系统框架主要由Question Analysis、Retrieval、Matching、Re-Rank等�
 AnyQ的框架结构如下图：
 
 <center>
-<img src="https://github.com/baidu/AnyQ/blob/master/docs/images/AnyQ-Framework.png" width="80%" height="80%" />
+<img src="./docs/images/AnyQ-Framework.png" width="80%" height="80%" />
 </center>
 
 #### 配置化
 AnyQ系统集成了检索和匹配的众多插件，通过配置的方式生效；以检索方式和文本匹配相似度计算中的插件为例：
 
 * 检索方式(Retrieval)
-    * 倒排索引：基于开源倒排索引Solr，加入百度开源分词；
-    * 语义检索：基于SimNet语义表示，使用ANNOY进行ANN 检索；
-    * 人工干预：通过提供精准答案，控制输出；
+    * 倒排索引：基于开源倒排索引Solr，加入百度开源分词
+    * 语义检索：基于SimNet语义表示，使用ANNOY进行ANN检索
+    * 人工干预：通过提供精准答案，控制输出
 * 匹配计算(Matching)
     *  字面匹配相似度：在对中文问题进行切词等处理之后，计算字面匹配特征
         * Cosine相似度
         * Jaccard相似度
         * BM25
     *  语义匹配相似度
-        * SimNet语义匹配：使用语义匹配SimNet架构训练的模型，构建问题在语义层面的相似度；
+        * SimNet语义匹配：使用语义匹配SimNet架构训练的模型，构建问题在语义层面的相似度
 
 #### 插件化
 
