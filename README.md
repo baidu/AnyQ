@@ -55,6 +55,10 @@ SimNet使用PaddleFluid和Tensorflow实现，更多文档请参考：
 
 * [SimNet TensorFlow](https://github.com/baidu/AnyQ/blob/master/tools/simnet/train/tf/README.md)
 
+#### **基于海量搜索数据的语义模型**
+
+基于百度海量搜索数据，我们训练了一个SimNet-BOW语义匹配模型，在一些真实的FAQ问答场景中，该模型效果比基于字面的相似度方法AUC提升5%以上，模型使用和获取方法参考[Demo](#demo)。
+
 
 ## 代码编译
 
