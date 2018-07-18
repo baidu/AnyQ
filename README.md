@@ -42,11 +42,12 @@ SimNet是百度自然语言处理部于2013年自主研发的语义匹配框架�
 
 按照文本语义匹配网络结构, 可将SimNet中实现的网络模型主要分为如下两类：
 
-* Representation-based Models
-  如：BOW, CNN, RNN(LSTM, GRNN)
+* Representation-based Models </br>
+  如：BOW, CNN, RNN(LSTM, GRNN) </br>
   特点：文本匹配任务的两端输入，分别进行表示，之后将表示进行融合计算相似度；
-* Interaction-based Models
-  如：MatchPyramid, MV-LSTM, K-NRM, MM-DNN
+  
+* Interaction-based Models </br>
+  如：MatchPyramid, MV-LSTM, K-NRM, MM-DNN </br>
   特点：在得到文本word级别的序列表示之后，根据两个序列表示计算相似度匹配矩阵，融合每个位置上的匹配信息给出最终相似度打分；
 
 SimNet使用PaddleFluid和Tensorflow实现，更多文档请参考：
