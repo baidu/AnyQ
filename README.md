@@ -64,7 +64,7 @@ SimNet使用PaddleFluid和Tensorflow实现，更多文档请参考：
 ## 代码编译
 
 ### Linux
-cmake 3.0以上(推荐3.2.2版本)，g++ >=4.8.2，
+cmake 3.0以上(推荐3.2.2版本)，g++ >=4.8.2，bison >=3.0
 ```
 mkdir build && cd build && cmake .. && make
 ```
