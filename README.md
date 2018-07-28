@@ -72,7 +72,7 @@ mkdir build && cd build && cmake .. && make
 针对MacOS、Windows等环境，推荐使用docker方式
 ```
 # 使用paddle官方镜像
-docker pull paddlepaddle/paddle:lastest-dev
+docker pull paddlepaddle/paddle:0.14.0
 ```
 
 ## Demo
