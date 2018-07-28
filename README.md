@@ -73,6 +73,8 @@ mkdir build && cd build && cmake .. && make
 ```
 # 使用paddle官方镜像
 docker pull paddlepaddle/paddle:latest-dev
+# 国内镜像
+docker pull docker.paddlepaddlehub.com/paddle:latest-dev
 ```
 
 ## Demo
