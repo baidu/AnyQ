@@ -15,7 +15,7 @@ ExternalProject_Add(
     UPDATE_COMMAND         ""
     CONFIGURE_COMMAND      ""
     INSTALL_COMMAND        cd ${BRPC_DOWNLOAD_DIR}/brpc/ 
-                           && sh config_brpc.sh --headers=${BRPC_INSTALL_DIR}/include --libs=${BRPC_INSTALL_DIR}/lib
+                           && sh config_brpc.sh --headers=${BRPC_INSTALL_DIR}/include --libs=${BRPC_INSTALL_DIR}/lib --with-glog
                            && make
     BUILD_IN_SOURCE 1
 
