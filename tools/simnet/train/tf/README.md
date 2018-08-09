@@ -62,7 +62,7 @@ SimNet可以使用Pointwise与Pairwise两种类型的数据进行训练
 python tools/tf_record_writer.py
         pointwise //数据类型
         data/train_pointwise_data //输入路径
-        data/train_pointwise_data //输出路径
+        data/convert_train_pointwise_data //输出路径
         0 //pad的ID，一般为0
         32 //序列最大长度
 ```
