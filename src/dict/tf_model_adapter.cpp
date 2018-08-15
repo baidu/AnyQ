@@ -27,7 +27,7 @@ int TFModelAdapter::load(const std::string& path, const DictConfig& config) {
     std::string dict_path = path + "/term2id";
     int ret = hash_load(dict_path.c_str(), p_tf_pack->term2id);
     if (ret != 0) {
-        FATAL_LOG("lego term2id dict load error");
+        FATAL_LOG("term2id dict load error");
         return -1;
     }
     // tf训练之后将graph 和weights合并到一个文件
@@ -37,7 +37,7 @@ int TFModelAdapter::load(const std::string& path, const DictConfig& config) {
                                 model_path, 
                                 &p_tf_pack->graphdef);
     if (!status_load.ok()) {
-        FATAL_LOG("lego tensorflow model error");
+        FATAL_LOG("load tensorflow model error");
         return -1;
     }
     TRACE_LOG("tf model load success");
