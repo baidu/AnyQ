@@ -13,7 +13,7 @@ ExternalProject_Add(
                      && unzip bazel-0.10.0-dist.zip -d bazel_build
     DOWNLOAD_NO_PROGRESS  1
     PREFIX                ${BAZEL_SOURCES_DIR}
-    BUILD_COMMAND         export JAVA_HOME=${THIRD_PARTY_PATH}/jdk-1.8 && cd ${BAZEL_DOWNLOAD_DIR}/bazel_build && sh compile.sh 
+    BUILD_COMMAND         export JAVA_HOME=${THIRD_PARTY_PATH}/jdk-1.8 && cd ${BAZEL_DOWNLOAD_DIR}/bazel_build && bash compile.sh 
     UPDATE_COMMAND        ""
     CONFIGURE_COMMAND     ""
     INSTALL_COMMAND       mkdir -p ${BAZEL_INSTALL_DIR}/bin 
