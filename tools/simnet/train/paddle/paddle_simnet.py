@@ -151,7 +151,7 @@ def predict(conf_dict):
                     place=place, feed_list=feed_var_names, program=program)
                 reader = data_reader.get_reader(conf_dict, True, samples_file)
             # Get batch data iterator
-            batch_data = paddle.batch(reader, conf_dict["batch_size"])
+            batch_data = paddle.batch(reader, conf_dict["batch_size"], drop_last=False)
             logging.info("start test process ...")
             for iter, data in enumerate(batch_data()):
                 output = executor.run(program, feed=feeder.feed(
