@@ -1,0 +1,40 @@
+{
+    "net": {
+        "module_name": "mm_dnn",
+        "class_name": "MMDNN",
+        "embedding_dim": 128,
+        "num_filters": 256,
+        "lstm_dim": 128,
+        "hidden_size": 128,
+        "window_size_left": 3,
+        "window_size_right": 3,
+        "dpool_size_left": 2,
+        "dpool_size_right": 2
+    },
+    "loss": {
+        "module_name": "softmax_cross_entropy_loss",
+        "class_name": "SoftmaxCrossEntropyLoss"
+    },
+    "optimizer": {
+        "class_name": "AdamOptimizer",
+        "learning_rate": 0.001,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "epsilon": 1e-08
+    },
+    "use_cuda": 1,
+    "dict_size": 3,
+    "max_len_left": 32,
+    "max_len_right": 32,
+    "n_class": 2,
+    "task_mode": "pointwise",
+    "match_mask" : 1,
+    "train_file_path": "data/train_pointwise_data", 
+    "test_file_path": "data/test_pointwise_data", 
+    "result_file_path": "result_mm_dnn_pointwise",
+    "epoch_num": 1, 
+    "model_path": "models/mm_dnn_pointwise",
+    "use_epoch": 0,
+    "batch_size": 64,
+    "num_threads": 6
+}
