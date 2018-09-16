@@ -105,14 +105,17 @@ def train(conf_dict):
         # Get batch data iterator
         batch_data = paddle.batch(reader, conf_dict["batch_size"], drop_last=False)
         start_time = time.time()
+        total_loss = 0.0
         for iter, data in enumerate(batch_data()):
             if len(data) < device_count:
                 continue
             avg_loss = parallel_executor.run(
                 [avg_cost.name], feed=feeder.feed(data))
-            if iter % 100 == 0:
+            total_loss += np.mean(avg_loss[0])
+            if (iter + 1) % 100 == 0:
                 print("epoch: %d, iter: %d, loss: %f" %
-                    (epoch_id, iter, np.mean(avg_loss[0])))
+                    (epoch_id, iter, total_loss / 100))
+                total_loss = 0.0
             losses.append(np.mean(avg_loss[0]))
         end_time = time.time()
         print("epoch: %d, loss: %f, used time: %d sec" %

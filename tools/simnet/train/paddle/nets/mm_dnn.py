@@ -30,6 +30,18 @@ class MMDNN(object):
         else:
             logging.error("training mode not supported")
 
+    def embedding_layer(self, input, zero_pad=True, scale=True):
+        emb = fluid.layers.embedding(
+            input=input,
+            size=[self.vocab_size, self.emb_size],
+            is_sparse=True,
+            padding_idx=(0 if zero_pad else None),
+            param_attr=fluid.ParamAttr(name="word_embedding",
+                initializer=fluid.initializer.Xavier()))
+        if scale:
+            emb = emb * (self.emb_size ** 0.5)
+        return emb
+       
     def bi_dynamic_lstm(self, input, hidden_size):
         fw_in_proj = fluid.layers.fc(input=input,
                                      size=4 * hidden_size,
@@ -52,7 +64,7 @@ class MMDNN(object):
             input=emb_expanded,
             num_filters=self.kernel_size,
             stride=1,
-            padding=16,
+            padding=[self.seq_len1 / 2, self.seq_len2 / 2],
             filter_size=[self.seq_len1, self.seq_len2],
             bias_attr=fluid.ParamAttr(
                 initializer=fluid.initializer.Constant(0.1)))
@@ -87,16 +99,8 @@ class MMDNN(object):
         return cross_mask
 
     def predict(self, left, right):
-        left_emb = fluid.layers.embedding(
-            input=left,
-            size=[self.vocab_size, self.emb_size],
-            is_sparse=True,
-            param_attr=fluid.ParamAttr(name="word_embedding"))
-        right_emb = fluid.layers.embedding(
-            input=right,
-            size=[self.vocab_size, self.emb_size],
-            is_sparse=True,
-            param_attr=fluid.ParamAttr(name="word_embedding"))
+        left_emb = self.embedding_layer(left, zero_pad=True, scale=False)
+        right_emb = self.embedding_layer(right, zero_pad=True, scale=False)
 
         bi_left_outputs = self.bi_dynamic_lstm(
             input=left_emb, hidden_size=self.lstm_dim)
