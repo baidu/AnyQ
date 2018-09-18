@@ -34,7 +34,6 @@ class MMDNN(object):
         emb = fluid.layers.embedding(
             input=input,
             size=[self.vocab_size, self.emb_size],
-            is_sparse=True,
             padding_idx=(0 if zero_pad else None),
             param_attr=fluid.ParamAttr(name="word_embedding",
                 initializer=fluid.initializer.Xavier()))
@@ -45,15 +44,21 @@ class MMDNN(object):
     def bi_dynamic_lstm(self, input, hidden_size):
         fw_in_proj = fluid.layers.fc(input=input,
                                      size=4 * hidden_size,
+                                     param_attr=fluid.ParamAttr(name="fw_fc.w"),
                                      bias_attr=False)
         forward, _ = fluid.layers.dynamic_lstm(
-            input=fw_in_proj, size=4 * hidden_size, is_reverse=False)
+            input=fw_in_proj, size=4 * hidden_size, is_reverse=False,
+            param_attr=fluid.ParamAttr(name="forward_lstm.w"),
+            bias_attr=fluid.ParamAttr(name="forward_lstm.b"))
 
         rv_in_proj = fluid.layers.fc(input=input,
                                      size=4 * hidden_size,
+                                     param_attr=fluid.ParamAttr(name="rv_fc.w"),
                                      bias_attr=False)
         reverse, _ = fluid.layers.dynamic_lstm(
-            input=rv_in_proj, size=4 * hidden_size, is_reverse=True)
+            input=rv_in_proj, size=4 * hidden_size, is_reverse=True,
+            param_attr=fluid.ParamAttr(name="reverse_lstm.w"),
+            bias_attr=fluid.ParamAttr(name="reverse_lstm.b"))
         return [forward, reverse]
 
     def conv_pool_relu_layer(self, input, mask=None):
