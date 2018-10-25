@@ -41,9 +41,9 @@
         "test_model_file": "model/pairwise/knrm.epoch1",
         "test_result": "result_knrm_pairwise"
     },
-
-    "graph": {
-        "graph_path": "graph",
-        "graph_name": "model_knrm_pairwise.protxt"
+    
+    "freeze":{
+        "save_path": "model/pairwise/knrm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

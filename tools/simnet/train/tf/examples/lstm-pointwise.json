@@ -41,8 +41,8 @@
         "test_result": "result_lstm_pointwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_lstm_pointwise.protxt"
+    "freeze":{
+        "save_path": "model/pointwise/lstm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

@@ -43,8 +43,8 @@
         "test_result": "result_cnn_pairwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_cnn_pairwise.protxt"
+	"freeze":{
+        "save_path": "model/pairwise/cnn.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

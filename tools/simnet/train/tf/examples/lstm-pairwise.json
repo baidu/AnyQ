@@ -42,8 +42,8 @@
         "test_result": "result_lstm_pairwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_lstm_pairwise.protxt"
+    "freeze":{
+        "save_path": "model/pairwise/lstm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

@@ -41,8 +41,8 @@
         "test_result": "result_bow_pointwise"
     },
 
-    "graph": {
-        "graph_path": "graph",
-        "graph_name": "model_bow_pointwise.protxt"
+    "freeze":{
+        "save_path": "model/pointwise/bow.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

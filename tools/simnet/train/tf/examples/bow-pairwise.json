@@ -42,8 +42,8 @@
         "test_result": "result_bow_pairwise"
     },
 
-    "graph": {
-        "graph_path": "graph",
-        "graph_name": "model_bow_pairwise.protxt"
+    "freeze":{
+        "save_path": "model/pairwise/bow.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

@@ -21,6 +21,7 @@ import sys
 import os
 
 import tensorflow as tf
+from tensorflow.python.framework import graph_util
 
 from utils import datafeeds
 from utils import controler
@@ -59,6 +60,7 @@ def train(conf_dict):
         datafeed = datafeeds.TFPointwisePaddingData(conf_dict)
         input_l, input_r, label_y = datafeed.ops()
         pred = net.predict(input_l, input_r)
+        output_prob = tf.nn.softmax(pred, -1, name="output_prob")
         loss_layer = utility.import_object(
             conf_dict["loss_py"], conf_dict["loss_class"])()
         loss = loss_layer.ops(pred, label_y)
@@ -66,6 +68,7 @@ def train(conf_dict):
         datafeed = datafeeds.TFPairwisePaddingData(conf_dict)
         input_l, input_r, neg_input = datafeed.ops()
         pos_score = net.predict(input_l, input_r)
+        output_prob = tf.identity(pos_score, name="output_preb")
         neg_score = net.predict(input_l, neg_input)
         loss_layer = utility.import_object(
             conf_dict["loss_py"], conf_dict["loss_class"])(conf_dict)
@@ -100,15 +103,15 @@ def freeze(conf_dict):
     """
     freeze net for c api predict
     """
-    net = utility.import_object(
-        conf_dict["net_py"], conf_dict["net_class"])(conf_dict)
-    test_l = dict([(u, tf.placeholder(tf.int32, [None, v], name=u))
-                   for (u, v) in dict(conf_dict["left_slots"]).iteritems()])
-    test_r = dict([(u, tf.placeholder(tf.int32, [None, v], name=u))
-                   for (u, v) in dict(conf_dict["right_slots"]).iteritems()])
-    pred = net.predict(test_l, test_r)
-    controler.graph_save(pred, conf_dict)
-
+    model_path = conf_dict["save_path"]
+    freeze_path = conf_dict["freeze_path"]
+    saver = tf.train.import_meta_graph(model_path + '.meta')
+    with tf.Session() as sess:
+        saver.restore(sess, model_path)
+        var_graph_def = tf.get_default_graph().as_graph_def()
+        const_graph_def = graph_util.convert_variables_to_constants(sess, var_graph_def, ["output_prob"])
+        with tf.gfile.GFile(freeze_path, "wb") as f:
+            f.write(const_graph_def.SerializeToString())
 
 def convert(conf_dict):
     """

@@ -46,9 +46,9 @@
         "test_model_file":  "model/pairwise/pyramid.epoch1",
         "test_result": "result_pyramid_pairwise"
     },
-
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_pyramid_pairwise.protxt"
+    
+    "freeze":{
+        "save_path": "model/pairwise/pyramid.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

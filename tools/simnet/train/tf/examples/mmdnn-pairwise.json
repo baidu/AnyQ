@@ -48,8 +48,8 @@
         "test_result": "result_mmdnn_pairwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_mmdnn_pairwise.protxt"
+    "freeze":{
+         "save_path": "model/pairwise/mmdnn.epoch1",
+         "freeze_path": "tf.graph"
     }
 }

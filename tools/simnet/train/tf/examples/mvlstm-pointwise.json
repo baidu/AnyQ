@@ -41,9 +41,9 @@
         "test_model_file":  "model/pointwise/mvlstm.epoch1",
         "test_result": "result_mvlstm_pointwise"
     },
-
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_mvlstm_pointwise.protxt"
+    
+    "freeze":{
+        "save_path": "model/pointwise/mvlstm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }
