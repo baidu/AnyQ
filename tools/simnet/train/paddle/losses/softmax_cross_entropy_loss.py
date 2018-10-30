@@ -19,7 +19,7 @@ import layers.paddle_layers as layers
 
 class SoftmaxCrossEntropyLoss(object):
     """
-    Softmax Cross Entropy Loss Calculate
+    Softmax with Cross Entropy Loss Calculate
     """
     def __init__(self, conf_dict):
         """
@@ -31,7 +31,8 @@ class SoftmaxCrossEntropyLoss(object):
         """
         compute loss
         """
-        cross_entropy = layers.CrossEntropyLayer()
+        softmax_with_cross_entropy = layers.SoftmaxWithCrossEntropyLayer()
         reduce_mean = layers.ReduceMeanLayer()
-        loss = reduce_mean.ops(cross_entropy.ops(input, label))
-        return loss
+        cost = softmax_with_cross_entropy.ops(input, label)
+        avg_cost = reduce_mean.ops(cost)
+        return avg_cost

@@ -15,6 +15,7 @@
 # limitations under the License.
 
 import sys
+import time
 
 import tensorflow as tf
 
@@ -88,6 +89,7 @@ def run_trainer(loss, optimizer, config):
         read_thread = tf.train.start_queue_runners(sess=sess, coord=coord)
         step = 0
         epoch_num = 1
+        start_time = time.time()
         while not coord.should_stop():
             try:
                 step += 1
@@ -98,10 +100,14 @@ def run_trainer(loss, optimizer, config):
                     print("loss: %f" % ((avg_cost / print_iter)))
                     avg_cost = 0.0
                 if step % epoch_iter == 0:
-                    print("save model epoch%d" % (epoch_num))
+                    end_time = time.time()
+                    print("save model epoch%d, used time: %d" % (epoch_num, 
+                          end_time - start_time))
                     save_path = saver.save(sess, 
                             "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
                     epoch_num += 1
+                    start_time = time.time()
+                    
             except tf.errors.OutOfRangeError:
                 save_path = saver.save(sess, "%s/%s.final" % (model_path, model_file))
                 coord.request_stop()

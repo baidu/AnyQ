@@ -49,9 +49,13 @@ def train(conf_dict):
     # Load Optimization method
     optimizer = utils.import_class(
         "optimizers", "paddle_optimizers", conf_dict["optimizer"]["class_name"])(conf_dict)
-
+    
     # Get service
-    place = fluid.core.CPUPlace()
+    if "use_cuda" in conf_dict and conf_dict["use_cuda"] == 1:
+        place = fluid.core.CUDAPlace(0)
+    else:
+        place = fluid.core.CPUPlace()
+
     if conf_dict["task_mode"] == "pairwise":
         # Build network
         left = data.ops(name="left", shape=[1], dtype="int64", lod_level=1)
@@ -73,6 +77,7 @@ def train(conf_dict):
         label = data.ops(name="label", shape=[1], dtype="int64", lod_level=0)
         left_feat, pred = net.predict(left, right)
         avg_cost = loss.compute(pred, label)
+        avg_cost.persistable = True
         # Get Feeder and Reader
         feeder = fluid.DataFeeder(place=place, feed_list=[
                                   left.name, right.name, label.name])
@@ -87,7 +92,8 @@ def train(conf_dict):
     executor.run(fluid.default_startup_program())
     # Get and run executor
     parallel_executor = fluid.ParallelExecutor(
-        use_cuda=False, loss_name=avg_cost.name,
+        use_cuda="use_cuda" in conf_dict and conf_dict["use_cuda"] == 1, 
+        loss_name=avg_cost.name,
         main_program=fluid.default_main_program())
     # Get device number
     device_count = parallel_executor.device_count
@@ -99,13 +105,17 @@ def train(conf_dict):
         # Get batch data iterator
         batch_data = paddle.batch(reader, conf_dict["batch_size"], drop_last=False)
         start_time = time.time()
+        total_loss = 0.0
         for iter, data in enumerate(batch_data()):
             if len(data) < device_count:
                 continue
             avg_loss = parallel_executor.run(
                 [avg_cost.name], feed=feeder.feed(data))
-            print("epoch: %d, iter: %d, loss: %f" %
-                (epoch_id, iter, np.mean(avg_loss[0])))
+            total_loss += np.mean(avg_loss[0])
+            if (iter + 1) % 100 == 0:
+                print("epoch: %d, iter: %d, loss: %f" %
+                    (epoch_id, iter, total_loss / 100))
+                total_loss = 0.0
             losses.append(np.mean(avg_loss[0]))
         end_time = time.time()
         print("epoch: %d, loss: %f, used time: %d sec" %
@@ -134,7 +144,10 @@ def predict(conf_dict):
             model_save_dir = conf_dict["model_path"]
             model_path = os.path.join(model_save_dir, str(conf_dict["use_epoch"]))
             # Get device 
-            place = fluid.core.CPUPlace()
+            if "use_cuda" in conf_dict and conf_dict["use_cuda"] == 1:
+                place = fluid.core.CUDAPlace(0)
+            else:
+                place = fluid.core.CPUPlace()
             # Get executor
             executor = fluid.Executor(place=place)
             # Load model
@@ -174,6 +187,7 @@ if __name__ == "__main__":
         "--conf_file_path", default="examples/cnn_pointwise.json", help="config file path")
     args = parser.parse_args()
     conf_dict = utils.parse_json(args.conf_file_path)
+    print(conf_dict)
     if args.task_type == "train":
         train(conf_dict)
     else:

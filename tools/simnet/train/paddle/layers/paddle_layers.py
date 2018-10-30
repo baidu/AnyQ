@@ -240,6 +240,23 @@ class CrossEntropyLayer(object):
         loss = fluid.layers.cross_entropy(input=input, label=label)
         return loss
 
+class SoftmaxWithCrossEntropyLayer(object):
+    """
+    Softmax with Cross Entropy Calculate Layer
+    """
+    def __init__(self, name="softmax_with_cross_entropy"):
+        """
+        initialize
+        """
+        pass
+
+    def ops(self, input, label):
+        """
+        operation
+        """
+        loss = fluid.layers.softmax_with_cross_entropy(logits=input, label=label)
+        return loss
+
 
 class CosSimLayer(object):
     """
