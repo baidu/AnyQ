@@ -24,7 +24,7 @@ simnet
 
 ## <span id="1">安装</span>
 
-Paddle版SimNet需要PaddlePaddle Fluid v0.14.0，详细安装方式见[PaddlePaddle官网](http://www.paddlepaddle.org/)。
+Paddle版SimNet需要PaddlePaddle Fluid v1.0.2，详细安装方式见[PaddlePaddle官网](http://www.paddlepaddle.org/)。
 
 ## <span id="2">数据准备</span>
 
