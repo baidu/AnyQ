@@ -1,0 +1,136 @@
+INFO: 2018-11-01 11:40:09,665 - tf_logging.py:82 * 140193789114112 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_point_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 11:42:19,197 - tf_logging.py:82 * 140082371622656 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_point_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 11:42:19,216 - tf_logging.py:82 * 140083952912128 model/pointwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,038 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,296 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,414 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,576 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,708 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:10,846 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:11,033 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:11,091 - tf_logging.py:82 * 139621098002176 model/pointwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:27,710 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:27,820 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:27,940 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:28,041 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:28,134 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:28,266 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:28,427 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:49:28,479 - tf_logging.py:82 * 140031585883904 model/pointwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,235 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,345 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,449 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,538 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,703 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,837 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:29,954 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:30,071 - tf_logging.py:82 * 140377470154496 model/pointwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:53:49,885 - tf_logging.py:82 * 140241344128768 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_point_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 11:53:49,928 - tf_logging.py:82 * 140242446673664 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 11:54:42,679 - tf_logging.py:82 * 139715353245440 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_pairwise_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 11:54:42,716 - tf_logging.py:82 * 139716666795776 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:20:43,351 - tf_logging.py:82 * 140489311381248 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_pairwise_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 13:20:43,394 - tf_logging.py:82 * 140490810439424 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:29:15,779 - tf_logging.py:82 * 140097000310528 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:29:31,349 - tf_logging.py:82 * 140151710856960 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:30:16,157 - tf_logging.py:82 * 140077516052224 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:17,414 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:17,506 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:17,678 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:17,801 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:17,915 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,025 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,151 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,248 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,371 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,482 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,590 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.epoch11 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:32:18,657 - tf_logging.py:82 * 140216243332864 model/pairwise/bow.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:51:07,127 - tf_logging.py:82 * 140185450837760 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_pair_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 13:51:07,172 - tf_logging.py:82 * 140186699671296 model/pairwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:51:33,699 - tf_logging.py:82 * 140568317339392 model/pairwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:25,180 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:25,539 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:25,979 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:26,467 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:26,981 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:27,514 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:27,894 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:28,361 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:28,771 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:29,194 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:29,551 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.epoch11 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:29,635 - tf_logging.py:82 * 139933334226688 model/pairwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:39,811 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:40,288 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:40,730 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:41,170 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:41,504 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:41,882 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:42,281 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:42,709 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:43,165 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:43,520 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:43,823 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.epoch11 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:52:43,897 - tf_logging.py:82 * 140587478058752 model/pairwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:55:28,305 - tf_logging.py:82 * 139728191555328 model/pointwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:55:28,368 - tf_logging.py:82 * 139728191555328 model/pointwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:04,200 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:05,279 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:06,610 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:07,714 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:08,783 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:10,004 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:11,448 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:12,715 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:14,077 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:15,324 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:56:15,382 - tf_logging.py:82 * 139721061369600 model/pointwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:37,764 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:39,120 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:40,613 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:42,070 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:43,480 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:45,269 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:46,688 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:48,008 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:49,482 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:51,081 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 13:58:51,140 - tf_logging.py:82 * 140025625155328 model/pointwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:06:02,999 - tf_logging.py:82 * 139657505404672 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_point_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 14:06:03,153 - tf_logging.py:82 * 139659155494656 model/pointwise/lstm.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:07:00,219 - tf_logging.py:82 * 140214775998208 model/pointwise/lstm.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:07:00,375 - tf_logging.py:82 * 140214775998208 model/pointwise/lstm.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:07:39,334 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:07:52,271 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:08:05,335 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:08:17,999 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:08:30,871 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:08:43,404 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:08:56,464 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:09:08,719 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:09:22,066 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:09:34,601 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:09:34,746 - tf_logging.py:82 * 139726809081600 model/pointwise/lstm.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:10:58,183 - tf_logging.py:82 * 140358568638208 Error reported to Coordinator: <class 'tensorflow.python.framework.errors_impl.NotFoundError'>, data/convert_train_pair_data
+	 [[Node: ReaderReadV2 = ReaderReadV2[_device="/job:localhost/replica:0/task:0/cpu:0"](TFRecordReaderV2, input_producer)]]
+INFO: 2018-11-01 14:10:58,358 - tf_logging.py:82 * 140360021538560 model/pairwise/lstm.final is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:26,333 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:28,539 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:31,108 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:33,043 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:35,056 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:37,448 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:39,809 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:42,329 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:44,638 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:47,038 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:49,443 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.epoch11 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2018-11-01 14:11:49,705 - tf_logging.py:82 * 139962337040128 model/pairwise/lstm.final is not in all_model_checkpoint_paths. Manually adding it.

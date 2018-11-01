@@ -1,7 +1,7 @@
 {
     "net": {
-        "module_name": "cnn",
-        "class_name": "CNN",
+        "module_name": "gru",
+        "class_name": "GRU",
         "emb_dim": 128, 
         "gru_dim": 128,
         "hidden_dim": 128
@@ -19,7 +19,7 @@
     "train_file_path": "data/train_pointwise_data", 
     "test_file_path": "data/test_pointwise_data", 
     "result_file_path": "result_gru_pointwise",
-    "epoch_num": 1, 
+    "epoch_num": 10, 
     "model_path": "models/gru_pointwise",
     "use_epoch": 0,
     "batch_size": 64,

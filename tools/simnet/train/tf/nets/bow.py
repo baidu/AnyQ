@@ -29,18 +29,19 @@ class BOW(object):
         self.vocab_size = int(config['vocabulary_size'])
         self.emb_size = int(config['embedding_dim'])
         self.bow_size = int(config["bow_size"])
-        self.hidden_size = int(config['hidden_size'])
         self.left_name, self.seq_len = config["left_slots"][0]
         self.right_name, self.seq_len = config["right_slots"][0]
         self.task_mode = config['training_mode']
         self.emb_layer = layers.EmbeddingLayer(self.vocab_size, self.emb_size)
         self.seq_pool_layer = layers.SequencePoolingLayer()
         self.softsign_layer = layers.SoftsignLayer()
-        self.bow_layer = layers.FCLayer(self.emb_size, self.bow_size)
         if self.task_mode == "pointwise":
             self.n_class = int(config['n_class'])
-            self.fc_layer = layers.FCLayer(2 * self.hidden_size, self.n_class)
+            self.bow_layer = layers.FCLayer(self.emb_size * 2, self.bow_size)
+            self.relu_layer = layers.ReluLayer()
+            self.fc_layer = layers.FCLayer(self.bow_size, self.n_class)
         elif self.task_mode == "pairwise":
+            self.bow_layer = layers.FCLayer(self.emb_size, self.bow_size)
             self.cos_layer = layers.CosineLayer()
         else:
             logging.error("training mode not supported")
@@ -57,12 +58,14 @@ class BOW(object):
         right_pool = self.seq_pool_layer.ops(right_emb)
         left_soft = self.softsign_layer.ops(left_pool)
         right_soft = self.softsign_layer.ops(right_pool)
-        left_bow = self.bow_layer.ops(left_soft)
-        right_bow = self.bow_layer.ops(right_soft)
         if self.task_mode == "pointwise":
-            concat = tf.concat([left_bow, right_bow], -1)
-            pred = self.fc_layer.ops(concat)
+            concat = tf.concat([left_soft, right_soft], -1)
+            concat_fc = self.bow_layer.ops(concat)
+            concat_relu = self.relu_layer.ops(concat_fc)
+            pred = self.fc_layer.ops(concat_relu)
         else:
+            left_bow = self.bow_layer.ops(left_soft)
+            right_bow = self.bow_layer.ops(right_soft)
             pred = self.cos_layer.ops(left_bow, right_bow)
         return pred
 

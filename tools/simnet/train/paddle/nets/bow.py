@@ -45,16 +45,19 @@ class BOW(object):
         softsign_layer = layers.SoftsignLayer()
         left_soft = softsign_layer.ops(left_pool)
         right_soft = softsign_layer.ops(right_pool)
-        bow_layer = layers.FCLayer(self.bow_dim, None, "tanh")
-        left_bow = bow_layer.ops(left_soft)
-        right_bow = bow_layer.ops(right_soft)
         # matching layer
         if self.task_mode == "pairwise":
+            bow_layer = layers.FCLayer(self.bow_dim, "relu", "fc")
+            left_bow = bow_layer.ops(left_soft)
+            right_bow = bow_layer.ops(right_soft)
             cos_sim_layer = layers.CosSimLayer()
             pred = cos_sim_layer.ops(left_bow, right_bow)
+            return left_bow, pred
         else:
             concat_layer = layers.ConcatLayer(1)
-            concat = concat_layer.ops([left_bow, right_bow])
+            concat = concat_layer.ops([left_soft, right_soft])
+            bow_layer = layers.FCLayer(self.bow_dim, "relu", "fc")
+            concat_fc = bow_layer.ops(concat)
             softmax_layer = layers.FCLayer(2, "softmax", "cos_sim")
-            pred = softmax_layer.ops(concat)
-        return left_bow, pred
+            pred = softmax_layer.ops(concat_fc)
+            return left_soft, pred

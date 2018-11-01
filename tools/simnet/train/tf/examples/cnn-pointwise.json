@@ -26,8 +26,8 @@
     },
 
     "setting":{
-        "batch_size": 64,
-        "num_epochs": 1,
+        "batch_size": 8,
+        "num_epochs": 10,
         "thread_num": 6,
         "print_iter": 100,
         "model_path": "model/pointwise",

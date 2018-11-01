@@ -1,0 +1,516 @@
+INFO: 2018-11-01 15:31:43,076 - paddle_simnet.py:94 * 140029282158336 device count: 8
+INFO: 2018-11-01 15:31:43,076 - paddle_simnet.py:96 * 140029282158336 start train process ...
+WARNING: 2018-11-01 15:31:43,077 - data_reader.py:80 * 140029282158336 line not match format in train file: 
+
+INFO: 2018-11-01 15:32:31,418 - paddle_simnet.py:94 * 139857152788224 device count: 8
+INFO: 2018-11-01 15:32:31,418 - paddle_simnet.py:96 * 139857152788224 start train process ...
+WARNING: 2018-11-01 15:32:31,419 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,570 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,584 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,608 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,624 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,642 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,672 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,696 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,734 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+WARNING: 2018-11-01 15:32:31,755 - data_reader.py:80 * 139857152788224 line not match format in train file: 
+
+INFO: 2018-11-01 15:32:47,549 - paddle_simnet.py:94 * 140227212822272 device count: 8
+INFO: 2018-11-01 15:32:47,549 - paddle_simnet.py:96 * 140227212822272 start train process ...
+INFO: 2018-11-01 15:37:55,135 - paddle_simnet.py:94 * 140203484628736 device count: 8
+INFO: 2018-11-01 15:37:55,136 - paddle_simnet.py:96 * 140203484628736 start train process ...
+INFO: 2018-11-01 15:38:03,442 - paddle_simnet.py:94 * 139769589970688 device count: 8
+INFO: 2018-11-01 15:38:03,442 - paddle_simnet.py:96 * 139769589970688 start train process ...
+INFO: 2018-11-01 15:38:19,185 - paddle_simnet.py:94 * 139941971166976 device count: 8
+INFO: 2018-11-01 15:38:19,185 - paddle_simnet.py:96 * 139941971166976 start train process ...
+INFO: 2018-11-01 15:38:46,001 - paddle_simnet.py:94 * 140179685013248 device count: 8
+INFO: 2018-11-01 15:38:46,001 - paddle_simnet.py:96 * 140179685013248 start train process ...
+WARNING: 2018-11-01 15:38:46,002 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,086 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,100 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,137 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,159 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,204 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,225 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,276 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,297 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+WARNING: 2018-11-01 15:38:46,343 - data_reader.py:80 * 140179685013248 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:10,175 - paddle_simnet.py:94 * 140245049386752 device count: 8
+INFO: 2018-11-01 15:39:10,175 - paddle_simnet.py:96 * 140245049386752 start train process ...
+WARNING: 2018-11-01 15:39:10,176 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,283 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,319 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,377 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,396 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,415 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,463 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,484 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,521 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:10,555 - data_reader.py:80 * 140245049386752 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:14,355 - paddle_simnet.py:94 * 140671128344320 device count: 8
+INFO: 2018-11-01 15:39:14,355 - paddle_simnet.py:96 * 140671128344320 start train process ...
+WARNING: 2018-11-01 15:39:14,356 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,515 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,549 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,573 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,602 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,686 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,713 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,728 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,743 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:14,784 - data_reader.py:80 * 140671128344320 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:19,487 - paddle_simnet.py:94 * 139764588058368 device count: 8
+INFO: 2018-11-01 15:39:19,487 - paddle_simnet.py:96 * 139764588058368 start train process ...
+WARNING: 2018-11-01 15:39:19,488 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,548 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,563 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,597 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,622 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,654 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,669 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,686 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,712 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:19,737 - data_reader.py:80 * 139764588058368 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:22,271 - paddle_simnet.py:94 * 140603235759872 device count: 8
+INFO: 2018-11-01 15:39:22,271 - paddle_simnet.py:96 * 140603235759872 start train process ...
+WARNING: 2018-11-01 15:39:22,272 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,332 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,356 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,390 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,448 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,470 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,496 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,526 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,558 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:22,606 - data_reader.py:80 * 140603235759872 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:25,031 - paddle_simnet.py:94 * 140525466916608 device count: 8
+INFO: 2018-11-01 15:39:25,031 - paddle_simnet.py:96 * 140525466916608 start train process ...
+WARNING: 2018-11-01 15:39:25,032 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,050 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,081 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,114 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,136 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,152 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,174 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,195 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,211 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:25,252 - data_reader.py:80 * 140525466916608 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:27,363 - paddle_simnet.py:94 * 140310071793408 device count: 8
+INFO: 2018-11-01 15:39:27,363 - paddle_simnet.py:96 * 140310071793408 start train process ...
+WARNING: 2018-11-01 15:39:27,364 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,443 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,462 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,482 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,506 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,542 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,563 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,598 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,622 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:27,645 - data_reader.py:80 * 140310071793408 line not match format in train file: 
+
+INFO: 2018-11-01 15:39:30,325 - paddle_simnet.py:94 * 139879915460352 device count: 8
+INFO: 2018-11-01 15:39:30,326 - paddle_simnet.py:96 * 139879915460352 start train process ...
+WARNING: 2018-11-01 15:39:30,327 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,457 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,478 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,527 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,551 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,588 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,613 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,648 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,700 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+WARNING: 2018-11-01 15:39:30,720 - data_reader.py:80 * 139879915460352 line not match format in train file: 
+
+INFO: 2018-11-01 15:41:35,820 - paddle_simnet.py:94 * 139628932953856 device count: 8
+INFO: 2018-11-01 15:41:35,820 - paddle_simnet.py:96 * 139628932953856 start train process ...
+WARNING: 2018-11-01 15:41:35,821 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,852 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,865 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,881 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,908 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,935 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,950 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,969 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:35,990 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+WARNING: 2018-11-01 15:41:36,014 - data_reader.py:80 * 139628932953856 line not match format in train file: 
+
+INFO: 2018-11-01 15:42:01,581 - paddle_simnet.py:94 * 139749542848256 device count: 8
+INFO: 2018-11-01 15:42:01,581 - paddle_simnet.py:96 * 139749542848256 start train process ...
+INFO: 2018-11-01 15:45:30,651 - paddle_simnet.py:94 * 140070701668096 device count: 8
+INFO: 2018-11-01 15:45:30,651 - paddle_simnet.py:96 * 140070701668096 start train process ...
+INFO: 2018-11-01 15:46:33,798 - paddle_simnet.py:94 * 139997189957376 device count: 8
+INFO: 2018-11-01 15:46:33,799 - paddle_simnet.py:96 * 139997189957376 start train process ...
+INFO: 2018-11-01 15:47:59,245 - paddle_simnet.py:94 * 140388952254208 device count: 8
+INFO: 2018-11-01 15:47:59,245 - paddle_simnet.py:96 * 140388952254208 start train process ...
+WARNING: 2018-11-01 15:47:59,246 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,425 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,457 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,481 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,514 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,536 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,568 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,597 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,635 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+WARNING: 2018-11-01 15:47:59,676 - data_reader.py:80 * 140388952254208 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:02,698 - paddle_simnet.py:94 * 140072243361536 device count: 8
+INFO: 2018-11-01 15:48:02,698 - paddle_simnet.py:96 * 140072243361536 start train process ...
+WARNING: 2018-11-01 15:48:02,699 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,763 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,803 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,839 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,872 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,910 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:02,947 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:03,002 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:03,038 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:03,112 - data_reader.py:80 * 140072243361536 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:07,139 - paddle_simnet.py:94 * 140714711004928 device count: 8
+INFO: 2018-11-01 15:48:07,140 - paddle_simnet.py:96 * 140714711004928 start train process ...
+WARNING: 2018-11-01 15:48:07,141 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,246 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,278 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,310 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,366 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,393 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,424 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,456 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,491 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:07,525 - data_reader.py:80 * 140714711004928 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:09,705 - paddle_simnet.py:94 * 140379757295360 device count: 8
+INFO: 2018-11-01 15:48:09,706 - paddle_simnet.py:96 * 140379757295360 start train process ...
+WARNING: 2018-11-01 15:48:09,706 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:09,976 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,012 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,057 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,092 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,162 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,223 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,273 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,316 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:10,370 - data_reader.py:80 * 140379757295360 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:12,504 - paddle_simnet.py:94 * 139897235744512 device count: 8
+INFO: 2018-11-01 15:48:12,504 - paddle_simnet.py:96 * 139897235744512 start train process ...
+WARNING: 2018-11-01 15:48:12,505 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,738 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,773 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,815 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,847 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,875 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,923 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:12,966 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:13,031 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:13,064 - data_reader.py:80 * 139897235744512 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:15,569 - paddle_simnet.py:94 * 140039205160704 device count: 8
+INFO: 2018-11-01 15:48:15,569 - paddle_simnet.py:96 * 140039205160704 start train process ...
+WARNING: 2018-11-01 15:48:15,570 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,708 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,740 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,773 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,820 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,872 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,918 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:15,999 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:16,059 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:16,098 - data_reader.py:80 * 140039205160704 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:51,710 - paddle_simnet.py:94 * 140463313020672 device count: 8
+INFO: 2018-11-01 15:48:51,710 - paddle_simnet.py:96 * 140463313020672 start train process ...
+WARNING: 2018-11-01 15:48:51,711 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:51,911 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:51,961 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,011 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,057 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,102 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,160 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,191 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,236 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:52,275 - data_reader.py:80 * 140463313020672 line not match format in train file: 
+
+INFO: 2018-11-01 15:48:58,162 - paddle_simnet.py:94 * 140062416598784 device count: 8
+INFO: 2018-11-01 15:48:58,162 - paddle_simnet.py:96 * 140062416598784 start train process ...
+WARNING: 2018-11-01 15:48:58,163 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,214 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,242 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,279 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,310 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,341 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,369 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,405 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,441 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+WARNING: 2018-11-01 15:48:58,481 - data_reader.py:80 * 140062416598784 line not match format in train file: 
+
+INFO: 2018-11-01 15:49:20,128 - paddle_simnet.py:94 * 140313882945280 device count: 8
+INFO: 2018-11-01 15:49:20,128 - paddle_simnet.py:96 * 140313882945280 start train process ...
+INFO: 2018-11-01 15:57:00,910 - paddle_simnet.py:94 * 139946300208896 device count: 8
+INFO: 2018-11-01 15:57:00,911 - paddle_simnet.py:96 * 139946300208896 start train process ...
+INFO: 2018-11-01 15:57:58,693 - paddle_simnet.py:94 * 140135250212608 device count: 8
+INFO: 2018-11-01 15:57:58,694 - paddle_simnet.py:96 * 140135250212608 start train process ...
+WARNING: 2018-11-01 15:57:58,695 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,248 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,360 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,504 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,603 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,641 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,701 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,780 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,850 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+WARNING: 2018-11-01 15:57:59,908 - data_reader.py:80 * 140135250212608 line not match format in train file: 
+
+INFO: 2018-11-01 15:58:03,083 - paddle_simnet.py:94 * 139981962884864 device count: 8
+INFO: 2018-11-01 15:58:03,084 - paddle_simnet.py:96 * 139981962884864 start train process ...
+WARNING: 2018-11-01 15:58:03,085 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,417 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,467 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,532 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,602 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,658 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,713 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,764 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,841 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+WARNING: 2018-11-01 15:58:03,937 - data_reader.py:80 * 139981962884864 line not match format in train file: 
+
+INFO: 2018-11-01 15:58:29,710 - paddle_simnet.py:94 * 139863057184512 device count: 8
+INFO: 2018-11-01 15:58:29,710 - paddle_simnet.py:96 * 139863057184512 start train process ...
+INFO: 2018-11-01 16:01:49,892 - paddle_simnet.py:94 * 140479699027712 device count: 8
+INFO: 2018-11-01 16:01:49,893 - paddle_simnet.py:96 * 140479699027712 start train process ...
+INFO: 2018-11-01 16:05:21,005 - paddle_simnet.py:94 * 140578412963584 device count: 8
+INFO: 2018-11-01 16:05:21,006 - paddle_simnet.py:96 * 140578412963584 start train process ...
+INFO: 2018-11-01 16:05:36,277 - paddle_simnet.py:94 * 140641597679360 device count: 8
+INFO: 2018-11-01 16:05:36,278 - paddle_simnet.py:96 * 140641597679360 start train process ...
+INFO: 2018-11-01 16:07:48,501 - paddle_simnet.py:94 * 139994857572096 device count: 8
+INFO: 2018-11-01 16:07:48,502 - paddle_simnet.py:96 * 139994857572096 start train process ...
+WARNING: 2018-11-01 16:07:48,503 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,631 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,674 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,737 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,824 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,892 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:48,950 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:49,016 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:49,092 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:49,166 - data_reader.py:80 * 139994857572096 line not match format in train file: 
+
+INFO: 2018-11-01 16:07:51,982 - paddle_simnet.py:94 * 140074163205888 device count: 8
+INFO: 2018-11-01 16:07:51,982 - paddle_simnet.py:96 * 140074163205888 start train process ...
+WARNING: 2018-11-01 16:07:51,983 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,096 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,164 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,205 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,243 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,285 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,334 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,371 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,406 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+WARNING: 2018-11-01 16:07:52,442 - data_reader.py:80 * 140074163205888 line not match format in train file: 
+
+INFO: 2018-11-01 16:08:10,676 - paddle_simnet.py:94 * 139712764098304 device count: 8
+INFO: 2018-11-01 16:08:10,677 - paddle_simnet.py:96 * 139712764098304 start train process ...
