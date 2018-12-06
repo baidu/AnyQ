@@ -505,7 +505,7 @@ class CNNDynamicPoolingLayer(object):
         self.dpool_size1 = dpool_size1
         self.dpool_size2 = dpool_size2
         self.kernel_size = kernel_size
-        filter_shape = [self.seq_len1, self.seq_len2, 1, self.kernel_size]
+        filter_shape = [self.win_size1, self.win_size2, 1, self.kernel_size]
         self.conv_w = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1),
                                   name="conv")
         self.bias = tf.Variable(tf.constant(0.1, shape=[self.kernel_size]),
