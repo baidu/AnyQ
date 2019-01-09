@@ -329,7 +329,7 @@ float cosine_similarity(std::vector<analysis_token_t>& src_tokens, std::vector<a
 
     while (analysis_it != src_tokens.end() && retrieval_it != trg_tokens.end()) {
         if (analysis_it->buffer == retrieval_it->buffer) {
-            product = analysis_it->analysis_term_weight * retrieval_it->analysis_term_weight;
+            product += analysis_it->analysis_term_weight * retrieval_it->analysis_term_weight;
             norm_analysis += analysis_it->analysis_term_weight * analysis_it->analysis_term_weight;
             norm_retrieval += retrieval_it->analysis_term_weight * retrieval_it->analysis_term_weight;
             ++analysis_it;
