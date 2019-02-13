@@ -215,7 +215,6 @@ int RankStrategy::compute_similarity(const AnalysisResult& analysis_res,
         if (rough_sort != _feature_calculator[i]->is_rough()) {
             continue;
         }
-        std::vector<std::vector<float> > single_feature;
         if (_feature_calculator[i]->compute_similarity(analysis_res, candidates) != 0) {
             FATAL_LOG("feature %s compute error", (_feature_calculator[i]->feature_name()).c_str());
             return -1;
