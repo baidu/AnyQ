@@ -96,7 +96,9 @@ class DynamicGRULayer(object):
         """
         operation
         """
-        proj = fluid.layers.fc(input=input, size=self.gru_dim * 3)
+        proj = fluid.layers.fc(input=input, size=self.gru_dim * 3
+                               param_attr=attr.ParamAttr(name="%s_fc.w" % self.name),
+                               bias_attr=attr.ParamAttr(name="%s_fc.b" % self.name))
         gru = fluid.layers.dynamic_gru(input=proj, size=self.gru_dim, 
                                        param_attr=attr.ParamAttr(name="%s.w" % self.name), 
                                        bias_attr=attr.ParamAttr(name="%s.b" % self.name))
@@ -118,7 +120,9 @@ class DynamicLSTMLayer(object):
         """
         operation
         """
-        proj = fluid.layers.fc(input=input, size=self.lstm_dim * 4)
+        proj = fluid.layers.fc(input=input, size=self.lstm_dim * 4
+                               param_attr=attr.ParamAttr(name="%s_fc.w" % self.name),
+                               bias_attr=attr.ParamAttr(name="%s_fc.b" % self.name))
         lstm, _ = fluid.layers.dynamic_lstm(input=proj, size=self.lstm_dim * 4, 
                                             param_attr=attr.ParamAttr(name="%s.w" % self.name), 
                                             bias_attr=attr.ParamAttr(name="%s.b" % self.name))

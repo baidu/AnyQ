@@ -87,7 +87,7 @@ def train(conf_dict):
     # operate Optimization
     optimizer.ops(avg_cost)
     # optimize memory 
-    fluid.memory_optimize(fluid.default_main_program())
+    # fluid.memory_optimize(fluid.default_main_program())
     executor = fluid.Executor(place)
     executor.run(fluid.default_startup_program())
     # Get and run executor
