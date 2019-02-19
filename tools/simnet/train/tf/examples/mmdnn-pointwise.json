@@ -49,6 +49,6 @@
 
     "freeze":{
         "save_path": "model/pointwise/mmdnn.epoch1",
-        "freeze_path": "tf.graph
+        "freeze_path": "tf.graph"
     }
 }
