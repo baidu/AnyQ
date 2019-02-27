@@ -24,5 +24,5 @@ add_custom_command(TARGET extern_xgboost POST_BUILD
     COMMAND cp -r ${XGBOOST_INSTALL_DIR}/lib/* third_party/lib
     COMMAND cp ${XGBOOST_INSTALL_DIR}/rabit/lib/librabit.a ${XGBOOST_INSTALL_DIR}/dmlc-core/libdmlc.a third_party/lib/
     COMMAND cp -r ${XGBOOST_INSTALL_DIR}/src third_party/
-    COMMAND cp -r ${XGBOOST_INSTALL_DIR}/dmlc-core/include/* ${XGBOOST_INSTALL_DIR}/rabit/include/* third_party/include/
+    COMMAND cp -r ${XGBOOST_INSTALL_DIR}/dmlc-core/include/* ${XGBOOST_INSTALL_DIR}/rabit/include/rabit third_party/include/
 )
