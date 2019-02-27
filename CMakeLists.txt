@@ -67,7 +67,7 @@ link_directories(
     ${THIRD_PARTY_PATH}/lib
 )
 
-set(CMAKE_CXX_FLAGS "-g -pipe -W -Wall -fPIC -std=c++11 -mfpmath=sse -msse -msse2 -msse3 -fopenmp") 
+set(CMAKE_CXX_FLAGS "-g -pipe -W -Wall -fPIC -std=c++11 -mfpmath=sse -msse -msse2 -msse3 -fopenmp -liconv") 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wl,-Bsymbolic -rdynamic -zmuldefs")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TENSORFLOW_TAG}")
 
