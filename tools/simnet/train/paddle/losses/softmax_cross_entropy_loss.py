@@ -15,7 +15,7 @@
 # limitations under the License.
 
 import layers.paddle_layers as layers
-import paddle.fuild as fluid
+import paddle.fluid as fluid
 
 
 class SoftmaxCrossEntropyLoss(object):
