@@ -74,7 +74,7 @@ mkdir build && cd build && cmake .. && make
 # paddle官方镜像
 docker pull paddlepaddle/paddle:latest-dev
 # paddle国内镜像
-docker pull docker.paddlepaddlehub.com/paddle:latest-dev
+docker pull hub.baidubce.com/paddlepaddle/paddle:latest-dev
 ```
 
 ## Demo
