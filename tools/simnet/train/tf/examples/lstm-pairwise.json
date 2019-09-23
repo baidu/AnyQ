@@ -37,7 +37,7 @@
     },
 
     "test_data":{
-        "test_file": "data/convert_test_pair_data",
+        "test_file": "data/convert_test_pairwise_data",
         "test_model_file":  "model/pairwise/lstm.epoch1",
         "test_result": "result_lstm_pairwise"
     },

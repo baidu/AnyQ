@@ -1,6 +1,6 @@
 {
     "train_data":{
-        "train_file": "data/convert_train_pair_data",
+        "train_file": "data/convert_train_pairwise_data",
         "data_size": 62,
         "left_slots" : [["left",32]],
         "right_slots" : [["right",32]]
@@ -43,7 +43,7 @@
     },
 
     "test_data":{
-        "test_file": "data/convert_test_pair_data",
+        "test_file": "data/convert_test_pairwise_data",
         "test_model_file":  "model/pairwise/mmdnn.epoch1",
         "test_result": "result_mmdnn_pairwise"
     },
