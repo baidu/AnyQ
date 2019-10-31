@@ -82,7 +82,6 @@ int PaddleSimilarity::destroy() {
 int PaddleSimilarity::compute_similarity(const AnalysisResult& analysis_res, RankResult& candidates) {
     hashmap_str2int& term2id_kv = _p_paddle_pack->term2id;
     std::vector<int> query_ids;
-    std::vector<int> cand_ids;
     int use_query_index = 0;
     const std::vector<analysis_token_t>& q_token =
             analysis_res.analysis[use_query_index].tokens_basic;
@@ -104,6 +103,7 @@ int PaddleSimilarity::compute_similarity(const AnalysisResult& analysis_res, Ran
             continue;
         }
         const std::vector<analysis_token_t>& c_token = candidates[i].match_info.tokens_basic;
+        std::vector<int> cand_ids;
         trans_term_to_id(term2id_kv, c_token, cand_ids);
         if (0 == cand_ids.size()){
             candidates[i].features.push_back(0.0);
