@@ -16,6 +16,8 @@
 
 namespace anyq{
 
+PluginFactory* PluginFactory::_instance = NULL;
+
 // 注册组件回调函数
 int PluginFactory::register_plugin(std::string plugin_type, PluginCreateFunc create_func) {
     _plugin_map[plugin_type] = create_func;
@@ -32,8 +34,9 @@ void* PluginFactory::create_plugin(std::string plugin_type) {
 }
 
 PluginFactory& PluginFactory::instance() {
-    static PluginFactory factory_ins;
-    return factory_ins;
+    if(_instance == NULL)
+        _instance = new PluginFactory();
+        return *_instance;            
 }
 
 }
