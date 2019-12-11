@@ -83,7 +83,7 @@ int json2retrieval_item(Json::Value& json_item, RetrievalItem& retrieval_item);
 typedef std::unordered_map<std::string, RetrievalItem> hashmap_str2retrieval_item;
 int str2retrieval_item_load(const char* dict_file, hashmap_str2retrieval_item& dict_map);
 
-// 读取配置文件，模板函数形式，哥策略模块均可使用
+// 读取配置文件，模板函数形式，各策略模块均可使用
 template<typename T> int load_config_from_file(const std::string& filename, T& param){
     int file_descriptor = open(filename.c_str(), O_RDONLY);
     if (file_descriptor == -1){

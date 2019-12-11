@@ -40,9 +40,9 @@
         "test_model_file":"model/pointwise/knrm.epoch1",
         "test_result":"result_knrm_pointwise"
     },
-
-    "graph":{
-        "graph_path":"graph",
-        "graph_name":"model_knrm_pointwise.protxt"
+    
+    "freeze":{
+        "save_path": "model/pointwise/knrm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

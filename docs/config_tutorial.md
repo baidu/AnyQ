@@ -15,10 +15,18 @@
 配置的格式, 举例如下
 
 ```
+# Paddle SimNet匹配模型词典: PaddleSimAdapter
 dict_config {
     name: "fluid_simnet"
     type: "PaddleSimAdapter"
     path: "./simnet"
+}
+
+# Tensorflow模型词典: TFModelAdapter
+dict_config {
+    name: "tf_qq_match"
+    type: "TFModelAdapter"
+    path: "./tf_model"
 }
 ```
 
@@ -93,6 +101,7 @@ retrieval_plugin {
 配置的格式如下
 
 ```
+# Paddle SimNet匹配模型相似度: PaddleSimilarity
 matching_config {
     name: "fluid_simnet_similarity"
     type: "PaddleSimilarity"
@@ -102,6 +111,22 @@ matching_config {
     query_feed_name: "left" 
     cand_feed_name: "right" 
     score_fetch_name: "cos_sim.tmp"
+}
+
+# Tensorflow匹配模型相似度： TFSimilarity
+matching_config {
+    name : "tf_qq_match"
+    type : "TFSimilarity"
+    using_dict_name: "tf_qq_match"
+    output_num : 1
+    rough : false
+    tfconf : {
+        pad_id : 0
+        sen_len: 32
+        left_input_name: "left"
+        right_input_name: "right"
+        output_name: "output_prob"
+    }
 }
 ```
 

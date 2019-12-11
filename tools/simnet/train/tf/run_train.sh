@@ -9,7 +9,7 @@ python ./tools/tf_record_writer.py pointwise ./data/test_pointwise_data ./data/c
 echo "convert data finish"
 
 in_task_type='train'
-in_task_conf='./examples/cnn-pointwise.json'
+in_task_conf='./examples/lstm-pointwise.json'
 python tf_simnet.py \
 		   --task $in_task_type \
 		   --task_conf $in_task_conf

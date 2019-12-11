@@ -74,7 +74,7 @@ python tools/tf_record_writer.py
 ```
 python tf_simnet.py
         --task train
-        --task_conf examples/cnn_pointwise.json
+        --task_conf examples/cnn-pointwise.json
 ```
 **参数说明：**
 * **task**: 任务类型 ，可选择train或predict。
@@ -138,7 +138,7 @@ python tf_simnet.py
 ```
 python tf_simnet.py
         --task predict
-        --task_conf examples/cnn_pointwise.json
+        --task_conf examples/cnn-pointwise.json
 ```
 **参数说明：**
 同模型训练部分

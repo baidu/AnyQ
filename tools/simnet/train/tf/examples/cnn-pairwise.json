@@ -1,6 +1,6 @@
 {
     "train_data":{
-        "train_file": "data/convert_train_pair_data",
+        "train_file": "data/convert_train_pairwise_data",
         "data_size": 62,
         "left_slots" : [["left",32]],
         "right_slots" : [["right",32]]
@@ -27,8 +27,8 @@
     },
 
     "setting":{
-        "batch_size": 64,
-        "num_epochs": 1,
+        "batch_size": 8,
+        "num_epochs": 10,
         "thread_num": 6,
         "print_iter": 100,
         "model_path": "model/pairwise",
@@ -43,8 +43,8 @@
         "test_result": "result_cnn_pairwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_cnn_pairwise.protxt"
+	"freeze":{
+        "save_path": "model/pairwise/cnn.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

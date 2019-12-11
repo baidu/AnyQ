@@ -46,16 +46,19 @@ class LSTM(object):
         last_layer = layers.SequenceLastStepLayer()
         left_last = last_layer.ops(left_lstm)
         right_last = last_layer.ops(right_lstm)
-        tanh_layer = layers.FCLayer(self.hidden_dim, "tanh", "tanh")
-        left_tanh = tanh_layer.ops(left_last)
-        right_tanh = tanh_layer.ops(right_last)
         # matching layer
         if self.task_mode == "pairwise":
+            relu_layer = layers.FCLayer(self.hidden_dim, "relu", "relu")
+            left_relu = relu_layer.ops(left_last)
+            right_relu = relu_layer.ops(right_last)
             cos_sim_layer = layers.CosSimLayer()
-            pred = cos_sim_layer.ops(left_tanh, right_tanh)
+            pred = cos_sim_layer.ops(left_relu, right_relu)
+            return left_relu, pred
         else:
             concat_layer = layers.ConcatLayer(1)
-            concat = concat_layer.ops([left_tanh, right_tanh])
+            concat = concat_layer.ops([left_last, right_last])
+            relu_layer = layers.FCLayer(self.hidden_dim, "relu", "relu")
+            concat_fc = relu_layer.ops(concat)
             softmax_layer = layers.FCLayer(2, "softmax", "cos_sim")
-            pred = softmax_layer.ops(concat)
-        return left_tanh, pred
+            pred = softmax_layer.ops(concat_fc)
+            return left_last, pred

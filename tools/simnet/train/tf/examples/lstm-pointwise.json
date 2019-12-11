@@ -1,6 +1,6 @@
 {
     "train_data":{
-        "train_file": "data/convert_train_point_data",
+        "train_file": "data/convert_train_pointwise_data",
         "data_size": 400,
         "left_slots" : [["left", 32]],
         "right_slots" : [["right", 32]]
@@ -25,8 +25,8 @@
     },
 
     "setting":{
-        "batch_size": 64,
-        "num_epochs": 1,
+        "batch_size": 8,
+        "num_epochs": 10,
         "thread_num": 6,
         "print_iter": 100,
         "model_path": "model/pointwise",
@@ -41,8 +41,8 @@
         "test_result": "result_lstm_pointwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_lstm_pointwise.protxt"
+    "freeze":{
+        "save_path": "model/pointwise/lstm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

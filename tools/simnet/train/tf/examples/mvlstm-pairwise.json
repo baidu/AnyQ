@@ -42,9 +42,9 @@
         "test_model_file":  "model/pairwise/mvlstm.epoch1",
         "test_result": "result_mvlstm_pairwise"
     },
-
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_mvlstm_pairwise.protxt"
+    
+	"freeze":{
+        "save_path": "model/pairwise/mvlstm.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

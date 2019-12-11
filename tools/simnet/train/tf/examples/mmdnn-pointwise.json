@@ -47,8 +47,8 @@
         "test_result": "result_mmdnn_pointwise"
     },
 
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_mmdnn_pointwise.protxt"
+    "freeze":{
+        "save_path": "model/pointwise/mmdnn.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

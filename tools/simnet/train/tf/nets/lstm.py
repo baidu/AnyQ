@@ -40,6 +40,7 @@ class LSTM(object):
         self.extract = layers.ExtractLastLayer()
         if self.task_mode == "pointwise":
             self.n_class = int(config['n_class'])
+            self.relu_layer = layers.ReluLayer()
             self.fc1_layer = layers.FCLayer(self.rnn_hidden_size * 2, self.hidden_size)
             self.fc2_layer = layers.FCLayer(self.hidden_size, self.n_class)
         elif self.task_mode == "pairwise":
@@ -66,7 +67,8 @@ class LSTM(object):
         if self.task_mode == "pointwise":
             rep_concat = tf.concat([left_rep, right_rep], -1)
             hidden1 = self.fc1_layer.ops(rep_concat)
-            pred = self.fc2_layer.ops(hidden1)
+            hidden1_relu = self.relu_layer.ops(hidden1)
+            pred = self.fc2_layer.ops(hidden1_relu)
         elif self.task_mode == "pairwise":
             left_hidden1 = self.fc1_layer.ops(left_rep)
             right_hidden1 = self.fc1_layer.ops(right_rep)

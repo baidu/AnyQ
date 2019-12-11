@@ -24,7 +24,7 @@
     "train_file_path": "data/train_pairwise_data", 
     "test_file_path": "data/test_pairwise_data", 
     "result_file_path": "result_cnn_pairwise",
-    "epoch_num": 1, 
+    "epoch_num": 10, 
     "model_path": "models/cnn_pairwise",
     "use_epoch": 0,
     "batch_size": 64,

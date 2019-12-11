@@ -45,9 +45,9 @@
         "test_model_file":  "model/pointwise/pyramid.epoch1",
         "test_result": "result_pyramid_pointwise"
     },
-
-    "graph":{
-        "graph_path": "graph",
-        "graph_name": "model_pyramid_pointwise.protxt"
+    
+    "freeze":{
+        "save_path": "model/pointwise/pyramid.epoch1",
+        "freeze_path": "tf.graph"
     }
 }

@@ -36,13 +36,13 @@ class MLPCnn(object):
         self.cnn_layer = layers.CNNLayer(self.seq_len, self.emb_size, 
                                         self.win_size, self.kernel_size)
         self.relu_layer = layers.ReluLayer()
-        self.tanh_layer = layers.TanhLayer()
         self.concat_layer = layers.ConcatLayer()
-        self.fc1_layer = layers.FCLayer(self.kernel_size, self.hidden_size)
         if self.task_mode == "pointwise":
             self.n_class = int(config['n_class'])
-            self.fc2_layer = layers.FCLayer(2 * self.hidden_size, self.n_class)
+            self.fc1_layer = layers.FCLayer(2 * self.kernel_size, self.hidden_size)
+            self.fc2_layer = layers.FCLayer(self.hidden_size, self.n_class)
         elif self.task_mode == "pairwise":
+            self.fc1_layer = layers.FCLayer(self.kernel_size, self.hidden_size)
             self.cos_layer = layers.CosineLayer()
         else:
             logging.error("training mode not supported")
@@ -59,14 +59,16 @@ class MLPCnn(object):
         right_cnn = self.cnn_layer.ops(right_emb)
         left_relu = self.relu_layer.ops(left_cnn)
         right_relu = self.relu_layer.ops(right_cnn)
-        hid1_left = self.fc1_layer.ops(left_relu)
-        hid1_right = self.fc1_layer.ops(right_relu)
-        left_tanh = self.tanh_layer.ops(hid1_left)
-        right_tanh = self.tanh_layer.ops(hid1_right)
         if self.task_mode == "pointwise":
-            concat = self.concat_layer.ops([left_tanh, right_tanh], self.hidden_size * 2)
-            pred = self.fc2_layer.ops(concat)
+            concat = self.concat_layer.ops([left_relu, right_relu], self.kernel_size * 2)
+            concat_fc = self.fc1_layer.ops(concat)
+            concat_relu = self.relu_layer.ops(concat_fc)
+            pred = self.fc2_layer.ops(concat_relu)
         else:
-            pred =self.cos_layer.ops(left_tanh, right_tanh)
+            hid1_left = self.fc1_layer.ops(left_relu)
+            hid1_right = self.fc1_layer.ops(right_relu)
+            left_relu2 = self.relu_layer.ops(hid1_left)
+            right_relu2 = self.relu_layer.ops(hid1_right)
+            pred =self.cos_layer.ops(left_relu2, right_relu2)
         return pred
 
