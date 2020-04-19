@@ -3,7 +3,7 @@
 ## 语义索引库构建
 1. 将灌库文件faq_file(utf8编码)转换成Json格式：
 	```
-	cp -rp ../tool/solr ./solr_script
+	cp -rp ../tools/solr ./solr_script
 	mkdir -p faq
 	python solr_script/make_json.py solr_script/sample_docs faq/schema_format faq/faq_json
 	```
