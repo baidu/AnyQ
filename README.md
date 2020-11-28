@@ -117,7 +117,9 @@ http:${host}:${port}/anyq?question=XXX
 * 可以在AnyQ框架下定制特定功能的插件，教程参考[AnyQ如何添加插件](https://github.com/baidu/AnyQ/blob/master/docs/plugin_tutorial.md)
 * 如果觉得自己定制的插件功能足够通用&漂亮，欢迎给我们提交PR
 
+## 致谢和声明
 
+本开源项目受国家重点研发计划“云计算和大数据”专项支持（项目号  2018YFB1004300 ）。
 
 ## Copyright and License
 
