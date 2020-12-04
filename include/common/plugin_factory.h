@@ -34,6 +34,7 @@ public:
     static PluginFactory& instance();
 
 private:
+    static PluginFactory* _instance;
     PluginMap _plugin_map;
 };
 
