@@ -1,6 +1,6 @@
 {
     "train_data":{
-        "train_file":"data/convert_train_point_data",
+        "train_file":"data/convert_train_pointwise_data",
         "data_size":400,
         "left_slots":[["left",32]],
         "right_slots":[["right",32]]

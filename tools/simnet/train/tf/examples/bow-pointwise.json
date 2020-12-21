@@ -36,7 +36,7 @@
     },
 
     "test_data": {
-        "test_file": "data/convert_test_point_data",
+        "test_file": "data/convert_test_pointwise_data",
         "test_model_file": "model/pointwise/bow.epoch1",
         "test_result": "result_bow_pointwise"
     },
