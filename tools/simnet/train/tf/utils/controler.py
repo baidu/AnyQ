@@ -62,7 +62,7 @@ def run_predict(pred, label, config):
     sess.close()
     result_file.close()
     if mode == "pointwise":
-        mean_acc = mean_acc / step
+        mean_acc = mean_acc / step*1.0
         print >> sys.stderr, "accuracy: %4.2f" % (mean_acc * 100)
 
 
